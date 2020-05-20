@@ -44,7 +44,7 @@ then
     then
       SCRIPT=$WORD
       set +e
-      echo "--allow-net --allow-write --allow-read --allow-plugin --unstable "$SCRIPT
+      echo $SCRIPT " --unstable"
       $DENO cache $SCRIPT "--unstable"
       set -e
     fi
