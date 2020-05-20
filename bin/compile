@@ -45,7 +45,7 @@ then
       SCRIPT=$WORD
       set +e
       echo $SCRIPT " --unstable"
-      sudo $DENO cache $SCRIPT "--unstable"
+      $DENO cache $SCRIPT "--unstable"
       set -e
     fi
   done
